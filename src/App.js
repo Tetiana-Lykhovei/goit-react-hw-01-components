@@ -6,6 +6,7 @@ import TransactionHistory from "./components/TransactionHistory/TransactionHisto
 
 import users from "./db/user.json";
 import statisticalData from "./db/statistical-data.json";
+import friends from "./db/friends.json";
 
 console.log(statisticalData);
 
@@ -23,7 +24,7 @@ function App() {
         stats={stats}
       />
       <Statistics title="Statistics" stats={statisticalData} />
-      <FriendList />
+      <FriendList people={friends} />
       <TransactionHistory />
     </div>
   );
