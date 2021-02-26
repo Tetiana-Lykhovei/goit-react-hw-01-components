@@ -5,8 +5,9 @@ import Statistics from "./components/Statistics/Statistics";
 import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 import users from "./db/user.json";
+import statisticalData from "./db/statistical-data.json";
 
-console.log(users);
+console.log(statisticalData);
 
 const { name, tag, location, avatar, stats } = users;
 
@@ -21,8 +22,8 @@ function App() {
         avatar={avatar}
         stats={stats}
       />
+      <Statistics title="Statistics" stats={statisticalData} />
       <FriendList />
-      <Statistics />
       <TransactionHistory />
     </div>
   );
