@@ -1,0 +1,35 @@
+.statistics {
+  width: 300px;
+  margin: 20px auto;
+}
+.statList {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.title {
+  margin: 0;
+  width: 300px;
+  /* border: 1px solid grey; */
+  background-color: white;
+}
+.item {
+  list-style: none;
+  width: 70px;
+  margin-right: 5px;
+  border: 1px solid rgb(196, 67, 17);
+  background-color: rgba(248, 134, 27, 0.767);
+  color: black;
+  font-weight: 600;
+}
+
+.item:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.item span {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

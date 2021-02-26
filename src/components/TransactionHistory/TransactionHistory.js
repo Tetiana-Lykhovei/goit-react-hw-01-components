@@ -14,7 +14,7 @@ const TransactionHistory = ({ trans }) => {
           </tr>
         </thead>
 
-        <tbody className={s.tbody}>
+        <tbody>
           {trans.map((el) => {
             const { id, type, amount, currency } = el;
             return (

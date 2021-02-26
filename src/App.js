@@ -16,7 +16,7 @@ const { name, tag, location, avatar, stats } = users;
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <h1>Hello, it's me</h1>
       <Profile
         name={name}
         tag={tag}
@@ -25,7 +25,9 @@ function App() {
         stats={stats}
       />
       <Statistics title="Statistics" stats={statisticalData} />
+      <h1>My Friends</h1>
       <FriendList people={friends} />
+      <h1>My Money</h1>
       <TransactionHistory trans={transactions} />
     </div>
   );
